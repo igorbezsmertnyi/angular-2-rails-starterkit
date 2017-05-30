@@ -1,0 +1,33 @@
+{
+  "name": "angular-2-rails-starterkit",
+  "version": "0.1.2",
+  "description": "qucki start with Angular 2 frame fork and rails server, with deployment to Heroku",
+  "main": "starterkit-cli.js",
+  "bin": {
+    "starterkit": "starterkit-cli.js"
+  },
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorbezsmertnyi/angular-2-rails-starterkit.git"
+  },
+  "keywords": [
+    "Angulr2",
+    "ng2",
+    "TypeScript",
+    "Rails",
+    "Angular-Rails"
+  ],
+  "author": "Igor Bezsmertnyi",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/igorbezsmertnyi/angular-2-rails-starterkit/issues"
+  },
+  "homepage": "https://github.com/igorbezsmertnyi/angular-2-rails-starterkit#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
