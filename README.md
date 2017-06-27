@@ -20,12 +20,25 @@ for linux ```sudo npm install angular-2-rails-starterkit -g```
   > ```gem 'rack-cors'```<br/>
   > ```gem 'foreman'``` to ```group :development```<br/>
   >then run ```bundle install```
+- **Config ```config.ru``` in root directory
+    file sould looks like this example
+
+    ```
+    require_relative 'config/environment'
+
+  	use Rack::Rewrite do
+  		rewrite %r{^(?!.*(api|\.)).*$}, '/index.html'
+  	end
+
+  	run Rails.application
+    ```
+
 - **Inside project folder run starterkit**<br/>
   ```starterkit -g```
 - **Strat Server**<br/>
   ```bundle exec foreman start -f Procfile.dev```
 - **Generate Production**<br/>
-  ```bundle exec foreman start -f Procfile.prod```
+  ```ng build --prod```
 
 
 
